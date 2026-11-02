@@ -1,2 +1,17 @@
 #include <stdio.h>
-int main(void){int a;scanf("%d",&a);int f=!(a<0||(a>=10&&a<12)||a>=15);if(f==1){printf("OK");}else{printf("NG");}return 0;}
+int main(void)
+{
+  int input;
+  scanf("%d",&input);
+
+  if ((input >= 0 && input < 10)||
+      (input >= 12 && input < 15))
+  {
+    printf("OK");
+  }
+  else
+  {
+    printf("NG");
+  }
+  return 0;
+}
